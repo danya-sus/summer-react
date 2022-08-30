@@ -1,13 +1,137 @@
-body {
-  margin: 0;
+::-webkit-scrollbar {
+  width: 0;
+}
+
+html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+}
+
+nav {
+  margin: 20px 2% 0 2%;
+  width: 96%;
+  height: 100px;
+  background-color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 0.5rem;
+}
+
+nav > h1 {
+  margin-left: 50px;
+  margin-right: 100px;
+  font-size: 40px;
+  font-weight: normal;
+}
+
+nav > a {
+  margin-left: 50px;
+  font-size: 30px;
+  font-weight: normal;
+  text-decoration: none;
+  color: black;
+  transition: all 0.2s ease-in-out;
+}
+
+body {
+  margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(237, 237, 237);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.menu {
+  width: 30%;
+  height: 50px;
+  margin: 30px auto;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: white;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu input {
+  width: 250px;
+  height: 28px;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  padding-left: 20px;
+  font-size: 20px;
+}
+
+.menu button {
+  width: 150px;
+  height: 35px;
+  border: 0;
+  border-radius: 0.5rem;
+  font-size: 24px;
+  transition: all 0.2s ease-in-out;
+}
+
+.menu button:hover {
+  box-shadow: 0 0 5px black;
+}
+
+.gallery {
+  margin-left: 100px;
+  margin-right: 100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gallery .item {
+  margin: 40px 0 0 0px;
+  padding-bottom: 20px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 30%;
+  box-sizing: content-box;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.gallery .item img {
+  width: 100%;
+}
+
+.gallery .item p, h2, ul {
+  text-align: left;
+  margin-left: 50px;
+}
+
+.gallery .item p, ul {
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.gallery .item ul {
+  list-style-type: none;
+  text-align: left;
+}
+
+.gallery .item:hover {
+  box-shadow: 0 0 15px black;
+  width: 33%;
+}
+
+footer {
+  width: 100%;
+  height: 200px;
+  border-top: 1px solid black;
+  bottom: 0;
+  margin-top: 50px;
 }
